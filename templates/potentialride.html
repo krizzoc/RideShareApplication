@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>REQUEST</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <div class = "wrapper">
+        <!--This button should lead to the driver account page-->
+      <form action="{{ url_for('potential')}}" method="POST" class="content" >
+        <button type="submit" name="dr" value="dr">My Account</button>
+      </form>
+      
+    </div>
+  </div>
+<h1>Welcome, Driver!</h1>
+<div class="content">
+    <div class = "wrapper">
+    <form action="{{ url_for('potential')}}" method="POST" class="content" >
+        <b>Please set your current location:</b>
+        <br>
+        <input type="text" name="Current Location" id="driverStartingLocation" placeholder="Starting Location">
+        <br>
+        <br>
+        <br>
+        <b>Please set the maximum radius you're willing to drive today:</b>
+        <br>
+        <input type="number" name="Driver Radius" id="driverRadius" placeholder="0">
+        <b>miles</b>
+        <br>
+        <button type="submit" name="driverLocation" value="driverLocation">View Potential Rides</button>
+    </form>
+    </div>
+</div>
+{% endblock %}

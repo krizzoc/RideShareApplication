@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>POLAM</title>
+{% endblock %}
+
+{% block body %}
+<h1>POLAM</h1>
+<div class='wrapper'>
+  <div class="box1">
+    <div class="vertical-center">
+      <form method ="post" action="/">
+        <button type="submit" name="submit_a" value="submit_a"> Login </button>
+      </form> 
+    </div>
+  </div>
+  <div class="box2">
+    <div class="vertical-center">
+      <form method ="post" action="/">
+        <button type="submit" name="submit_b" value="submit_b"> Sign-up </button>
+      </form> 
+    </div>
+  </div>
+</div>
+{% endblock %}

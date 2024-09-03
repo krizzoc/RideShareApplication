@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>CHOOSE DRIVER</title> <!--This title shows up on the browser tab-->
+{% endblock %}
+
+{% block body %}
+<h1>CHOOSE A DRIVER</h1>
+<div class= "wrapper">
+<form action="{{ url_for('selectdriver')}}" method="POST" class="content">
+  <select size="5" class="driverlist">
+    <option>Kowshik 4.7★    ETA:5 min    Ride Share Available    RS.114.34</option>
+      <option>Pazhani 5★    ETA:7 min    Ride Share Unavailable    RS.119.77</option>
+        <option>Durwin 4.9★   ETA:9 min    Ride Share Unavailable    RS.212.32</option>
+      <option>Sowmiya 4.8★   ETA:10 min    Ride Share Unavailable    RS.241.98</option>
+      <option>Dhoom 4.8★   ETA:12 min    Ride Share Unavailable    RS.301.05</option>
+  </select>
+    <input class="RequestButton" type="submit" name="REQUESTBUTTON"  value="REQUEST" style="font-size:20px;"/> 
+</form>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>CHOOSE RIDER</title> <!--This title shows up on the browser tab-->
+{% endblock %}
+{% block body %}
+<h1>CHOOSE A RIDER</h1>
+<div class= "wrapper">
+  <form action="{{ url_for('selectrider')}}" method="POST" class="content" >
+<select size="5" class="driverlist">
+  <option>Destination: 1.7 mi away Subrayan street, Namalvarpettai   ETA:8min    Ride Sharing   $14.34</option>
+    <option>Destination: 1.8 mi away Canal Stree, Triplicane   ETA:9min    Ride Sharing   $19.34</option>
+      <option>Destination: 1.2 mi away Srinagar street, Poooinganagar,Trl  ETA:7min                 $20.34</option>
+    <option>Destination: 2.2 mi away Varsha garden, Perumalpattu   ETA:10min    Ride Sharing   $22.23</option>
+    <option>Destination: 0.9 mi away Perambur, Paerambalur   ETA:3min                   $24.98</option>
+</select>
+<button type="submit" value="ACCEPTREQUEST">ACCEPT REQUEST</button>
+</form>
+  </div>
+</div>
+{% endblock %}

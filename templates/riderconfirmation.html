@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>CONFIRMATION</title> <!--This title shows up on the browser tab-->
+{% endblock %}
+{% block body %}
+<h1>POLAM</h1>
+<h2>Driver has confirmed your ride</h2>
+<div class="wrapper">
+  <div class="vertical-center">
+    <h4>Your driver is: Pazhani         ETA: 4 min</h4>
+    <h4>Ride Sharing is Enabled.</h4>
+    <h4>Pickup Location: Avadi junction </h4>
+    <h4>Destination: 1200  Wacker Drive, Avadi, Chennai</h4>
+    <br>
+    <h4>License Plate: LZ9999</h4>      
+    <h4>Car Model: Honda Accord</h4>
+    <h4>Car Color: Silver</h4>
+    <form action="{{ url_for('confirmride')}}" method="POST" class="content" >
+    <input class="RateButton" type="submit" name="Rating"  value="RATE DRIVER" style="font-size:16px;"/>
+  </form>
+  </div>
+</div>
+<script type="text/javascript">
+  alert("Your account has been charged: RS.219.77");
+</script>
+
+  {% endblock %}
